@@ -1,0 +1,59 @@
+{
+    "customer": {
+        "create": {
+            "cart": {},
+            "order": {},
+            "review": {}
+        },
+        "update": {
+            "cart": {},
+            "user": {}
+        },
+        "delete": {
+            "cart": {}
+        },
+        "read": {
+            "cart": {},
+            "user": {},
+            "product": {},
+            "order": {},
+            "category": {},
+            "review": {},
+            "sales_channel": {}
+        },
+        "list": {
+            "product": {},
+            "order": {},
+            "category": {},
+            "review": {},
+            "sales_channel": {}
+        }
+    },
+    "guest": {
+        "create": {
+            "cart": {},
+            "user": {},
+            "order": {}
+        },
+        "update": {
+            "cart": {}
+        },
+        "delete": {
+            "cart": {}
+        },
+        "read": {
+            "cart": {},
+            "product": {},
+            "category": {},
+            "review": {},
+            "sales_channel": {},
+            "order": {}
+        },
+        "list": {
+            "product": {},
+            "category": {},
+            "review": {},
+            "sales_channel": {}
+        }
+    }
+}
