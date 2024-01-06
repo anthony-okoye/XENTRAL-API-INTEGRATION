@@ -132,17 +132,17 @@ Technical Documentation for Connecting with Xentral
 https://ORGANISATION-ID.xentral.biz/api/salesOrders/actions/import
 
 
-Request Headers
-Cache-Control : no-cache
-Postman-Token : <calculated when request is sent>
-Content-Length : 0
-Host : <calculated when request is sent>
-User-Agent : PostmanRuntime/7.32.1
-Accept : */*
-Accept-Encoding : gzip, deflate, br
-Connection : keep-alive
-Authorization : Bearer TOKEN
-Content-Type : application/vnd.xentral.default.v1-beta+json
+-> Request Headers
+- Cache-Control : no-cache
+- Postman-Token : <calculated when request is sent>
+- Content-Length : 0
+- Host : <calculated when request is sent>
+- User-Agent : PostmanRuntime/7.32.1
+- Accept : */*
+- Accept-Encoding : gzip, deflate, br
+- Connection : keep-alive
+- Authorization : Bearer TOKEN
+- Content-Type : application/vnd.xentral.default.v1-beta+json
 
 
 
@@ -150,18 +150,18 @@ Content-Type : application/vnd.xentral.default.v1-beta+json
 https://ORGANISATION-ID.xentral.biz/api/products
 
 
-Request Headers
-Cache-Control : no-cache
-Postman-Token : <calculated when request is sent>
-Content-Type : application/json
-Content-Length : <calculated when request is sent>
-Host : <calculated when request is sent>
-User-Agent : PostmanRuntime/7.32.1
-Accept : */*
-Accept-Encoding : gzip, deflate, br
-Connection : keep-alive
-authorization : Bearer TOKEN
-content-type : application/vnd.xentral.default.v1+json
+-> Request Headers
+- Cache-Control : no-cache
+- Postman-Token : <calculated when request is sent>
+- Content-Type : application/json
+- Content-Length : <calculated when request is sent>
+- Host : <calculated when request is sent>
+- User-Agent : PostmanRuntime/7.32.1
+- Accept : */*
+- Accept-Encoding : gzip, deflate, br
+- Connection : keep-alive
+- authorization : Bearer TOKEN
+- content-type : application/vnd.xentral.default.v1+json
 
 Body raw (json)
 ```
@@ -193,10 +193,11 @@ Body raw (json)
 https://ORGANISATION-ID.xentral.biz/api/salesOrders/actions/import
 
 
-Request Headers
-authorization : Bearer TOKEN
-content-type : application/vnd.xentral.default.v1-beta+json
+-> Request Headers
+- authorization : Bearer TOKEN
+- content-type : application/vnd.xentral.default.v1-beta+json
 Body raw (json)
+```
 {
   "customer": {
     "id": "3"
@@ -245,32 +246,33 @@ Body raw (json)
     }
   ]
 }
+```
 
 4. GET list customers
 https://ORGANISATION-ID.xentral.biz/api/customers?filter[0][key]=email&filter[0][value]=%s.com&filter[0][op]=equals
 
 
-Request Headers
-authorization : Bearer TOKEN
-accept : application/vnd.xentral.default.v1+json
+-> Request Headers
+- authorization : Bearer TOKEN
+- accept : application/vnd.xentral.default.v1+json
 
-Query Params
+-> Query Params
 
-filter[0][key] : email
-filter[0][value] : EMAIL VALUE
-filter[0][op] : equals
+- filter[0][key] : email
+- filter[0][value] : EMAIL VALUE
+- filter[0][op] : equals
 
 
 4. GET list products
 https://ORGANISATION-ID.xentral.biz/api/products?filter[0][key]=number&filter[0][value]=%s&filter[0][op]=equals
 
 
-Request Headers
-authorization : Bearer TOKEN
-accept : application/vnd.xentral.default.v1+json
+-> Request Headers
+- authorization : Bearer TOKEN
+- accept : application/vnd.xentral.default.v1+json
 
-Query Params
+-> Query Params
 
-filter[0][key] : number
-filter[0][value] : NUMBER VALUE
-filter[0][op] : equals
+- filter[0][key] : number
+- filter[0][value] : NUMBER VALUE
+- filter[0][op] : equals
