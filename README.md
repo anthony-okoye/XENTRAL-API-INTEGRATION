@@ -164,6 +164,7 @@ authorization : Bearer TOKEN
 content-type : application/vnd.xentral.default.v1+json
 
 Body raw (json)
+```
 {
         "project": {"id": "1"},
         "measurements": {
@@ -186,7 +187,7 @@ Body raw (json)
         "isStockItem": true,
         "minimumOrderQuantity": 1
     }
-
+```
     
 3. POST create sales order
 https://ORGANISATION-ID.xentral.biz/api/salesOrders/actions/import
