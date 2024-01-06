@@ -168,24 +168,24 @@ Body raw (json)
 {
         "project": {"id": "1"},
         "measurements": {
-            "width": {"unit": "cm", "value": 1.00},
-            "height": {"unit": "cm", "value": 1.00},
-            "length": {"unit": "cm", "value": 1.00},
-            "weight": {"unit": "kg", "value": 1.00},
-            "netWeight": {"unit": "kg", "value": 1.00}
+            "width": {"unit": "cm", "value": float},
+            "height": {"unit": "cm", "value": float},
+            "length": {"unit": "cm", "value": float},
+            "weight": {"unit": "kg", "value": float},
+            "netWeight": {"unit": "kg", "value": float}
         },
-        "name": "First Bite2",
-        "number": "31199715",
-        "ean": "9781498934695",
-        "shopPriceDisplay": "3.00",
-        "description": "no value",
+        "name": "string",
+        "number": "string",
+        "ean": "string",
+        "shopPriceDisplay": "float",
+        "description": "string",
         "manufacturer": {
-            "name": "Knox, Lorelei",
-            "number": "no value",
-            "link": "https://no_value"
+            "name": "string",
+            "number": "string",
+            "link": "string"
           },
-        "isStockItem": true,
-        "minimumOrderQuantity": 1
+        "isStockItem": boolean,
+        "minimumOrderQuantity": integer
     }
 ```
     
@@ -200,49 +200,49 @@ Body raw (json)
 ```
 {
   "customer": {
-    "id": "3"
+    "id": "integer"
   },
   "project": {
-    "id": "1"
+    "id": "integer"
   },
   "financials": {
     "paymentMethod": {
-      "id": "1"
+      "id": "integer"
     },
     "billingAddress": {
-      "street": "Musterstraße 1",
-      "country": "CH",
-      "name": "test test",
-      "city": "test local",
-      "zipCode": "test local",
-      "type": "mr"
+      "street": "string",
+      "country": "string",
+      "name": "string",
+      "city": "string",
+      "zipCode": "string",
+      "type": "string"
     },
-    "currency": "CHF"
+    "currency": "string"
   },
   "delivery": {
     "shippingAddress": {
-      "street": "Musterstraße 1",
-      "type": "mr",
-      "name": "test test",
-      "zipCode": "test local",
-      "city": "Musterstadt",
-      "country": "CH"
+      "street": "string",
+      "type": "string",
+      "name": "string",
+      "zipCode": "string",
+      "city": "string",
+      "country": "string"
     },
     "shippingMethod": {
-      "id": "1"
+      "id": "integer"
     }
   },
   "date": "12/11/2023",
   "positions": [
     {
       "product": {
-        "id": "2"
+        "id": "integer"
       },
       "price": {
-        "amount": "6.9",
-        "currency": "CHF"
+        "amount": "float",
+        "currency": "string"
       },
-      "quantity": 1
+      "quantity": integer
     }
   ]
 }
